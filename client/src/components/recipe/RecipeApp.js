@@ -20,6 +20,7 @@ export const RecipeApp = () => {
                 className='search'
                 placeholder='Search by Category...'
                 value={query}
+                name='query'
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyPress={search}
             />      
