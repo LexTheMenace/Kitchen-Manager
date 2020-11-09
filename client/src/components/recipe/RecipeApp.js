@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { fetchMeals } from './api/fetchMeals';
+import './App.css';
+
 // Change to get all by id's and make searchable? 
 export const RecipeApp = () => {
     const [ query, setQuery ] = useState('');
@@ -30,7 +32,7 @@ export const RecipeApp = () => {
                 {recipes.map( recipe => {
                     return (
                         <div>
-                        <img src={recipe.strMealThumb}/>
+                        <img id='recipeCard' src={recipe.strMealThumb}/>
                         <h1 key={recipe.idMeal}>{recipe.strMeal}</h1>
                         </div>
                     )

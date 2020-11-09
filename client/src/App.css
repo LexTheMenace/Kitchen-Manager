@@ -1,3 +1,8 @@
-* {
-    background-image: url('./bkgd.jpg');
+body {
+    background-color: #3d4349;
+}
+
+#navbar {
+    background-color: #343a40;
+    border-bottom: solid black 1px;
 }
